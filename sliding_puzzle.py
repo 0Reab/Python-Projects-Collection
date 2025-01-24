@@ -60,8 +60,15 @@ def swap_tiles(empty_tile, target_tile):
 def move_tile():
     empty_tile = find_tile('#')
 
-    print('Which tile do you want to place on the EMPTY tile')
-    user_move = input('L|R|U|D: ')
+    while True: # validate user input move
+        print('Which tile do you want to place on the EMPTY tile')
+        user_move = input('L|R|U|D: ')
+
+        if user_move.lower() in {'l', 'r', 'u', 'd'}:
+            break
+
+        print(f'{user_move} is not a legal move.')
+
 
     # get tile coordinates of user_move
     match user_move:
