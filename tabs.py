@@ -1,7 +1,7 @@
 import webbrowser
 
 # global vars
-notepad = r'C:\Users\StillAStojke\Desktop\guitar.txt' # path to .txt containing 'song - url' lines
+notepad = r'C:\Users\Foo\Desktop\guitar.txt' # path to .txt containing 'song - url' lines
 browser = lambda x: webbrowser.open(x)
 
 
